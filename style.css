@@ -1,0 +1,179 @@
+/* =========================================
+   BASIC EVENT-DRIVEN WEBPAGE
+   Laboratory Activity #1
+   ========================================= */
+
+/* Page container */
+#pageContainer {
+    width: 90%;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 35px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    text-align: center;
+}
+
+/* General page styling */
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #eaf4ff;
+    color: #222222;
+    transition: background-color 0.4s ease;
+}
+
+/* Header */
+header {
+    margin-bottom: 25px;
+}
+
+header h1 {
+    margin-bottom: 8px;
+    font-size: 28px;
+}
+
+header h2 {
+    margin: 5px 0;
+    font-size: 20px;
+}
+
+header p {
+    margin: 5px;
+    font-weight: bold;
+}
+
+/* Student information */
+.student-info {
+    text-align: left;
+    background-color: #f5f7fa;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    border-left: 5px solid #2c7be5;
+}
+
+.student-info p {
+    margin: 8px 0;
+}
+
+/* Main heading */
+#mainHeading {
+    margin-bottom: 25px;
+    font-size: 30px;
+    transition: all 0.3s ease;
+}
+
+/* Input section */
+.input-section {
+    margin-bottom: 20px;
+}
+
+.input-section label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+#nameInput {
+    width: 80%;
+    max-width: 450px;
+    padding: 13px;
+    border: 2px solid #cccccc;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    box-sizing: border-box;
+}
+
+#nameInput:focus {
+    border-color: #2c7be5;
+}
+
+/* Buttons */
+.button-section {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin: 25px 0;
+}
+
+button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    opacity: 0.9;
+}
+
+#greetingButton {
+    background-color: #2c7be5;
+    color: white;
+}
+
+#backgroundButton {
+    background-color: #28a745;
+    color: white;
+}
+
+#resetButton {
+    background-color: #dc3545;
+    color: white;
+}
+
+/* Message area */
+#messageArea {
+    min-height: 25px;
+    margin: 20px auto;
+    padding: 15px;
+    background-color: #f5f7fa;
+    border-radius: 8px;
+    font-weight: bold;
+    color: #333333;
+}
+
+/* Footer */
+footer {
+    margin-top: 30px;
+    color: #666666;
+    font-size: 14px;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    #pageContainer {
+        width: 85%;
+        padding: 20px;
+    }
+
+    header h1 {
+        font-size: 22px;
+    }
+
+    header h2 {
+        font-size: 17px;
+    }
+
+    #mainHeading {
+        font-size: 24px;
+    }
+
+    #nameInput {
+        width: 100%;
+    }
+
+    button {
+        width: 100%;
+    }
+}
